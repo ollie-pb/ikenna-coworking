@@ -4,60 +4,169 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ikenna - Premium Coworking Space in Nairobi</title>
-    <link rel="stylesheet" href="styles.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Component Library Styles -->
+    <link rel="stylesheet" href="styles/tokens.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/atoms.css">
+    <link rel="stylesheet" href="styles/molecules.css">
+    <link rel="stylesheet" href="styles/organisms.css">
+    <link rel="stylesheet" href="styles/animations.css">
 </head>
 <body>
-    <main class="container">
-        <header class="hero">
-            <h1 class="logo">Ikenna</h1>
-            <h2 class="headline">Where Kenya's innovators work</h2>
-            <p class="subheadline">Premium coworking space in the heart of Nairobi. Join a community of creators, builders, and dreamers.</p>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container-narrow">
+            <div class="hero__logo">
+                <h1 class="logo">Ikenna</h1>
+            </div>
 
-            <div class="pricing-card">
-                <div class="price">
-                    <span class="currency">£</span>
-                    <span class="amount">100</span>
-                    <span class="period">/month</span>
+            <h2 class="hero__headline animate-fade-in-up">
+                Where Kenya's Innovators Work
+            </h2>
+
+            <p class="hero__subheadline animate-fade-in-up delay-100">
+                Premium coworking space in the heart of Nairobi. Join a community of creators, builders, and dreamers shaping the future.
+            </p>
+
+            <div class="hero__pricing animate-scale-in delay-200">
+                <div class="pricing-card">
+                    <div class="pricing-card__badge">
+                        <span class="badge badge-gold">Limited Availability</span>
+                    </div>
+
+                    <div class="pricing-card__price">
+                        <span class="pricing-card__currency">KSh</span>
+                        <span class="pricing-card__amount">15,000</span>
+                        <span class="pricing-card__period">/month</span>
+                    </div>
+
+                    <p class="label pricing-card__label">Full Membership Access</p>
+
+                    <ul class="pricing-card__features">
+                        <li class="pricing-card__feature">24/7 workspace access</li>
+                        <li class="pricing-card__feature">High-speed fiber internet</li>
+                        <li class="pricing-card__feature">Premium coffee & refreshments</li>
+                        <li class="pricing-card__feature">Meeting room privileges</li>
+                        <li class="pricing-card__feature">Networking events</li>
+                        <li class="pricing-card__feature">Prime Nairobi location</li>
+                    </ul>
+
+                    <button class="btn btn-primary btn-large pricing-card__cta">
+                        Join Now
+                    </button>
                 </div>
-                <p class="pricing-note">Full membership access</p>
             </div>
 
-            <button class="cta-button">Join Now</button>
-            <p class="cta-subtext">Start working smarter today</p>
-        </header>
+            <p class="hero__cta-text animate-fade-in delay-300">
+                Start working smarter today — no commitment required
+            </p>
+        </div>
+    </section>
 
-        <section class="benefits">
-            <div class="benefit">
-                <div class="benefit-icon">⚡</div>
-                <h3>High-Speed WiFi</h3>
-                <p>Ultra-fast fiber internet to keep you productive</p>
+    <!-- Benefits Section -->
+    <section class="benefits">
+        <div class="container">
+            <div class="benefits__header">
+                <h2 class="benefits__title">Designed for Excellence</h2>
+                <p class="benefits__subtitle">
+                    Every detail crafted to elevate your work experience and fuel your ambitions.
+                </p>
             </div>
-            <div class="benefit">
-                <div class="benefit-icon">☕</div>
-                <h3>Premium Coffee</h3>
-                <p>Unlimited barista-quality coffee & refreshments</p>
-            </div>
-            <div class="benefit">
-                <div class="benefit-icon">🤝</div>
-                <h3>Vibrant Community</h3>
-                <p>Network with entrepreneurs and innovators</p>
-            </div>
-            <div class="benefit">
-                <div class="benefit-icon">📍</div>
-                <h3>Prime Location</h3>
-                <p>Central Nairobi address, easily accessible</p>
-            </div>
-        </section>
 
-        <section class="final-cta">
-            <h3>Ready to elevate your work?</h3>
-            <button class="cta-button">Join Now</button>
-        </section>
+            <div class="benefits__grid">
+                <div class="benefit-card scroll-animate">
+                    <span class="benefit-card__icon">⚡</span>
+                    <h3 class="benefit-card__title">High-Speed WiFi</h3>
+                    <p class="benefit-card__description">
+                        Ultra-fast fiber internet with dedicated bandwidth to keep you productive without interruption.
+                    </p>
+                </div>
 
-        <footer>
-            <p>&copy; 2025 Ikenna Coworking. Nairobi, Kenya</p>
-        </footer>
-    </main>
+                <div class="benefit-card scroll-animate delay-100">
+                    <span class="benefit-card__icon">☕</span>
+                    <h3 class="benefit-card__title">Premium Coffee</h3>
+                    <p class="benefit-card__description">
+                        Unlimited barista-quality coffee, tea, and refreshments to fuel your creative process.
+                    </p>
+                </div>
+
+                <div class="benefit-card scroll-animate delay-200">
+                    <span class="benefit-card__icon">🤝</span>
+                    <h3 class="benefit-card__title">Vibrant Community</h3>
+                    <p class="benefit-card__description">
+                        Network with entrepreneurs, innovators, and industry leaders building the future of Kenya.
+                    </p>
+                </div>
+
+                <div class="benefit-card scroll-animate delay-300">
+                    <span class="benefit-card__icon">📍</span>
+                    <h3 class="benefit-card__title">Prime Location</h3>
+                    <p class="benefit-card__description">
+                        Central Nairobi address that's easily accessible and puts you at the heart of the action.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container-narrow">
+            <h3 class="cta-section__title">Ready to Elevate Your Work?</h3>
+            <p class="cta-section__subtitle">
+                Join Kenya's most ambitious professionals in a space designed for success.
+            </p>
+            <button class="btn btn-primary btn-large cta-section__button">
+                Reserve Your Spot
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__column">
+                    <h4 class="footer__column-title">Ikenna</h4>
+                    <p class="body-small">
+                        Premium coworking space for Kenya's innovators and entrepreneurs.
+                    </p>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__column-title">Contact</h4>
+                    <a href="mailto:hello@ikenna.co.ke" class="footer__link">hello@ikenna.co.ke</a>
+                    <a href="tel:+254700000000" class="footer__link">+254 700 000 000</a>
+                    <p class="body-small">Nairobi, Kenya</p>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__column-title">Quick Links</h4>
+                    <a href="#" class="footer__link">About Us</a>
+                    <a href="#" class="footer__link">Membership</a>
+                    <a href="#" class="footer__link">Events</a>
+                    <a href="#" class="footer__link">Contact</a>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    &copy; 2025 Ikenna Coworking. All rights reserved.
+                </p>
+                <div class="footer__social social-links">
+                    <a href="#" class="social-link" aria-label="Instagram">📷</a>
+                    <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+                    <a href="#" class="social-link" aria-label="LinkedIn">💼</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>

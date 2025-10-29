@@ -1,0 +1,277 @@
+/* =================================
+   MOLECULES
+   Component combinations
+   ================================= */
+
+/* Pricing Card */
+.pricing-card {
+  background-color: var(--color-white);
+  border: 2px solid var(--color-black);
+  padding: var(--space-12) var(--space-10);
+  max-width: 500px;
+  margin: 0 auto;
+  position: relative;
+  transition: all var(--transition-base);
+}
+
+.pricing-card:hover {
+  box-shadow: var(--shadow-2xl);
+  transform: translateY(-4px);
+}
+
+.pricing-card__badge {
+  position: absolute;
+  top: calc(var(--space-4) * -1);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.pricing-card__price {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  margin-bottom: var(--space-6);
+  padding-bottom: var(--space-6);
+  border-bottom: 1px solid var(--color-gray-light);
+}
+
+.pricing-card__currency {
+  font-family: var(--font-serif);
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-gold);
+}
+
+.pricing-card__amount {
+  font-family: var(--font-serif);
+  font-size: var(--font-size-6xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-black);
+  line-height: 1;
+  margin: 0 var(--space-2);
+}
+
+.pricing-card__period {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-xl);
+  color: var(--color-gray);
+  font-weight: var(--font-weight-light);
+}
+
+.pricing-card__label {
+  text-align: center;
+  margin-bottom: var(--space-8);
+}
+
+.pricing-card__features {
+  list-style: none;
+  padding: 0;
+  margin: var(--space-8) 0;
+}
+
+.pricing-card__feature {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-base);
+  color: var(--color-gray-dark);
+  padding: var(--space-3) 0;
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.pricing-card__feature::before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background-color: var(--color-gold);
+  flex-shrink: 0;
+}
+
+.pricing-card__cta {
+  width: 100%;
+  margin-top: var(--space-8);
+}
+
+/* Benefit Card */
+.benefit-card {
+  background-color: var(--color-white);
+  padding: var(--space-10) var(--space-8);
+  text-align: center;
+  border: 1px solid var(--color-gray-light);
+  transition: all var(--transition-base);
+  position: relative;
+  overflow: hidden;
+}
+
+.benefit-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-gold);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--transition-slow);
+}
+
+.benefit-card:hover::before {
+  transform: scaleX(1);
+}
+
+.benefit-card:hover {
+  border-color: var(--color-gold);
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-xl);
+}
+
+.benefit-card__icon {
+  font-size: var(--font-size-5xl);
+  margin-bottom: var(--space-6);
+  display: block;
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: all var(--transition-base);
+}
+
+.benefit-card:hover .benefit-card__icon {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.benefit-card__title {
+  font-family: var(--font-serif);
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-black);
+  margin-bottom: var(--space-4);
+  letter-spacing: var(--letter-spacing-tight);
+}
+
+.benefit-card__description {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-base);
+  color: var(--color-gray);
+  line-height: var(--line-height-relaxed);
+}
+
+/* Navigation Item */
+.nav-item {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-wider);
+  color: var(--color-black);
+  text-decoration: none;
+  padding: var(--space-2) var(--space-4);
+  position: relative;
+  transition: color var(--transition-fast);
+}
+
+.nav-item::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-gold);
+  transition: transform var(--transition-base);
+}
+
+.nav-item:hover {
+  color: var(--color-gold);
+}
+
+.nav-item:hover::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
+.nav-item--active {
+  color: var(--color-gold);
+}
+
+.nav-item--active::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
+/* Feature List */
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.feature-list__item {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-lg);
+  color: var(--color-gray-dark);
+  padding: var(--space-4) 0;
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-4);
+  border-bottom: 1px solid var(--color-gray-light);
+}
+
+.feature-list__item:last-child {
+  border-bottom: none;
+}
+
+.feature-list__icon {
+  color: var(--color-gold);
+  font-size: var(--font-size-xl);
+  flex-shrink: 0;
+  margin-top: var(--space-1);
+}
+
+.feature-list__text {
+  flex: 1;
+}
+
+/* Logo */
+.logo {
+  font-family: var(--font-serif);
+  font-size: var(--font-size-4xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-black);
+  text-decoration: none;
+  letter-spacing: var(--letter-spacing-tight);
+  display: inline-block;
+  position: relative;
+  padding-bottom: var(--space-2);
+}
+
+.logo::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  background-color: var(--color-gold);
+}
+
+/* Social Links */
+.social-links {
+  display: flex;
+  gap: var(--space-6);
+  align-items: center;
+}
+
+.social-link {
+  font-size: var(--font-size-xl);
+  color: var(--color-gray);
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+.social-link:hover {
+  color: var(--color-gold);
+  transform: translateY(-2px);
+}
