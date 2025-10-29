@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Component Library - Ikenna Design System</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Component Library Styles -->
+    <link rel="stylesheet" href="styles/tokens.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/atoms.css">
+    <link rel="stylesheet" href="styles/molecules.css">
+    <link rel="stylesheet" href="styles/organisms.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="styles/showcase.css">
+</head>
+<body class="showcase">
+    <!-- Sidebar Navigation -->
+    <aside class="showcase__sidebar">
+        <h1 class="showcase__sidebar-title">Ikenna</h1>
+        <p class="showcase__sidebar-subtitle">Component Library</p>
+
+        <nav>
+            <ul class="showcase__nav">
+                <li class="showcase__nav-item">
+                    <a href="#tokens" class="showcase__nav-link">Design Tokens</a>
+                </li>
+                <li class="showcase__nav-item">
+                    <a href="#colors" class="showcase__nav-link">Colors</a>
+                </li>
+                <li class="showcase__nav-item">
+                    <a href="#typography" class="showcase__nav-link">Typography</a>
+                </li>
+                <li class="showcase__nav-item">
+                    <a href="#spacing" class="showcase__nav-link">Spacing</a>
+                </li>
+                <li class="showcase__nav-item">
+                    <a href="#buttons" class="showcase__nav-link">Buttons</a>
+                </li>
+                <li class="showcase__nav-item">
+                    <a href="#badges" class="showcase__nav-link">Badges & Links</a>
+                </li>
+                <li class="showcase__nav-item">
+                    <a href="#cards" class="showcase__nav-link">Cards</a>
+                </li>
+                <li class="showcase__nav-item">
+                    <a href="#pricing" class="showcase__nav-link">Pricing Card</a>
+                </li>
+                <li class="showcase__nav-item">
+                    <a href="#hero" class="showcase__nav-link">Hero Section</a>
+                </li>
+                <li class="showcase__nav-item">
+                    <a href="#benefits" class="showcase__nav-link">Benefits Grid</a>
+                </li>
+                <li class="showcase__nav-item">
+                    <a href="#footer" class="showcase__nav-link">Footer</a>
+                </li>
+                <li class="showcase__nav-item">
+                    <a href="index.html" class="showcase__nav-link" style="margin-top: 2rem; border-top: 1px solid var(--color-gray-light); padding-top: 1rem;">← Back to Site</a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="showcase__main">
+        <!-- Introduction -->
+        <section class="showcase__section" id="tokens">
+            <h2 class="showcase__section-title">Ikenna Design System</h2>
+            <p class="showcase__section-description">
+                A minimalist luxury design system built with atomic design principles. Black, white, and gold color palette with elegant serif typography for a sophisticated, high-end aesthetic.
+            </p>
+            <div class="showcase__note">
+                <strong>Atomic Design:</strong> Components are organized into Atoms (basic elements), Molecules (simple combinations), and Organisms (complex sections) for maximum reusability and maintainability.
+            </div>
+        </section>
+
+        <!-- Colors -->
+        <section class="showcase__section" id="colors">
+            <h2 class="showcase__section-title">Color Palette</h2>
+            <p class="showcase__section-description">
+                A refined palette centered around black, white, and gold for a luxury aesthetic.
+            </p>
+
+            <div class="showcase__group">
+                <h3 class="showcase__group-title">Primary Colors</h3>
+                <div class="showcase__color-grid">
+                    <div class="showcase__color-swatch">
+                        <div class="showcase__color-box" style="background-color: #D4AF37;"></div>
+                        <div class="showcase__color-name">Gold</div>
+                        <div class="showcase__color-value">#D4AF37</div>
+                    </div>
+                    <div class="showcase__color-swatch">
+                        <div class="showcase__color-box" style="background-color: #0A0A0A;"></div>
+                        <div class="showcase__color-name">Black</div>
+                        <div class="showcase__color-value">#0A0A0A</div>
+                    </div>
+                    <div class="showcase__color-swatch">
+                        <div class="showcase__color-box" style="background-color: #FAFAFA; border: 2px solid #E0E0E0;"></div>
+                        <div class="showcase__color-name">White</div>
+                        <div class="showcase__color-value">#FAFAFA</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="showcase__divider"></div>
+
+            <div class="showcase__group">
+                <h3 class="showcase__group-title">Neutral Grays</h3>
+                <div class="showcase__color-grid">
+                    <div class="showcase__color-swatch">
+                        <div class="showcase__color-box" style="background-color: #1A1A1A;"></div>
+                        <div class="showcase__color-name">Charcoal</div>
+                        <div class="showcase__color-value">#1A1A1A</div>
+                    </div>
+                    <div class="showcase__color-swatch">
+                        <div class="showcase__color-box" style="background-color: #2D2D2D;"></div>
+                        <div class="showcase__color-name">Gray Dark</div>
+                        <div class="showcase__color-value">#2D2D2D</div>
+                    </div>
+                    <div class="showcase__color-swatch">
+                        <div class="showcase__color-box" style="background-color: #666666;"></div>
+                        <div class="showcase__color-name">Gray</div>
+                        <div class="showcase__color-value">#666666</div>
+                    </div>
+                    <div class="showcase__color-swatch">
+                        <div class="showcase__color-box" style="background-color: #CCCCCC;"></div>
+                        <div class="showcase__color-name">Gray Light</div>
+                        <div class="showcase__color-value">#CCCCCC</div>
+                    </div>
+                    <div class="showcase__color-swatch">
+                        <div class="showcase__color-box" style="background-color: #F5F5F5;"></div>
+                        <div class="showcase__color-name">Off White</div>
+                        <div class="showcase__color-value">#F5F5F5</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Typography -->
+        <section class="showcase__section" id="typography">
+            <h2 class="showcase__section-title">Typography</h2>
+            <p class="showcase__section-description">
+                Elegant serif headings (Playfair Display) paired with clean sans-serif body text (Inter).
+            </p>
+
+            <div class="showcase__group">
+                <h3 class="showcase__group-title">Headings</h3>
+                <div class="showcase__demo">
+                    <div class="showcase__type-sample">
+                        <div class="showcase__type-label">Heading 1 (.heading-1)</div>
+                        <h1 class="heading-1">Where Kenya's Innovators Work</h1>
+                    </div>
+                    <div class="showcase__type-sample">
+                        <div class="showcase__type-label">Heading 2 (.heading-2)</div>
+                        <h2 class="heading-2">Designed for Excellence</h2>
+                    </div>
+                    <div class="showcase__type-sample">
+                        <div class="showcase__type-label">Heading 3 (.heading-3)</div>
+                        <h3 class="heading-3">Premium Coworking Space</h3>
+                    </div>
+                    <div class="showcase__type-sample">
+                        <div class="showcase__type-label">Heading 4 (.heading-4)</div>
+                        <h4 class="heading-4">Join Our Community</h4>
+                    </div>
+                    <div class="showcase__type-sample">
+                        <div class="showcase__type-label">Heading 5 (.heading-5)</div>
+                        <h5 class="heading-5">High-Speed WiFi</h5>
+                    </div>
+                </div>
+
+                <div class="showcase__code">
+                    <button class="showcase__code-copy" onclick="copyCode(this)">Copy</button>
+                    <pre>&lt;h1 class="heading-1"&gt;Where Kenya's Innovators Work&lt;/h1&gt;
+&lt;h2 class="heading-2"&gt;Designed for Excellence&lt;/h2&gt;</pre>
+                </div>
+            </div>
+
+            <div class="showcase__divider"></div>
+
+            <div class="showcase__group">
+                <h3 class="showcase__group-title">Body Text</h3>
+                <div class="showcase__demo">
+                    <div class="showcase__type-sample">
+                        <div class="showcase__type-label">Subheading (.subheading)</div>
+                        <p class="subheading">Premium coworking space in the heart of Nairobi</p>
+                    </div>
+                    <div class="showcase__type-sample">
+                        <div class="showcase__type-label">Body Large (.body-large)</div>
+                        <p class="body-large">Join a community of creators, builders, and dreamers shaping the future.</p>
+                    </div>
+                    <div class="showcase__type-sample">
+                        <div class="showcase__type-label">Body (.body)</div>
+                        <p class="body">Ultra-fast fiber internet with dedicated bandwidth to keep you productive without interruption.</p>
+                    </div>
+                    <div class="showcase__type-sample">
+                        <div class="showcase__type-label">Body Small (.body-small)</div>
+                        <p class="body-small">Premium coworking space for Kenya's innovators and entrepreneurs.</p>
+                    </div>
+                    <div class="showcase__type-sample">
+                        <div class="showcase__type-label">Label (.label)</div>
+                        <p class="label">Full Membership Access</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Spacing -->
+        <section class="showcase__section" id="spacing">
+            <h2 class="showcase__section-title">Spacing Scale</h2>
+            <p class="showcase__section-description">
+                Consistent spacing system from 4px to 128px for layout harmony.
+            </p>
+
+            <div class="showcase__demo">
+                <div class="showcase__spacing-grid">
+                    <div class="showcase__spacing-item">
+                        <div class="showcase__spacing-box" style="width: 4px; height: 30px;"></div>
+                        <div class="showcase__spacing-label">--space-1 (4px / 0.25rem)</div>
+                    </div>
+                    <div class="showcase__spacing-item">
+                        <div class="showcase__spacing-box" style="width: 8px; height: 30px;"></div>
+                        <div class="showcase__spacing-label">--space-2 (8px / 0.5rem)</div>
+                    </div>
+                    <div class="showcase__spacing-item">
+                        <div class="showcase__spacing-box" style="width: 16px; height: 30px;"></div>
+                        <div class="showcase__spacing-label">--space-4 (16px / 1rem)</div>
+                    </div>
+                    <div class="showcase__spacing-item">
+                        <div class="showcase__spacing-box" style="width: 24px; height: 30px;"></div>
+                        <div class="showcase__spacing-label">--space-6 (24px / 1.5rem)</div>
+                    </div>
+                    <div class="showcase__spacing-item">
+                        <div class="showcase__spacing-box" style="width: 32px; height: 30px;"></div>
+                        <div class="showcase__spacing-label">--space-8 (32px / 2rem)</div>
+                    </div>
+                    <div class="showcase__spacing-item">
+                        <div class="showcase__spacing-box" style="width: 48px; height: 30px;"></div>
+                        <div class="showcase__spacing-label">--space-12 (48px / 3rem)</div>
+                    </div>
+                    <div class="showcase__spacing-item">
+                        <div class="showcase__spacing-box" style="width: 64px; height: 30px;"></div>
+                        <div class="showcase__spacing-label">--space-16 (64px / 4rem)</div>
+                    </div>
+                    <div class="showcase__spacing-item">
+                        <div class="showcase__spacing-box" style="width: 96px; height: 30px;"></div>
+                        <div class="showcase__spacing-label">--space-24 (96px / 6rem)</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Buttons -->
+        <section class="showcase__section" id="buttons">
+            <h2 class="showcase__section-title">Buttons (Atoms)</h2>
+            <p class="showcase__section-description">
+                Button variants for different actions and hierarchy.
+            </p>
+
+            <div class="showcase__group">
+                <h3 class="showcase__group-title">Primary Buttons</h3>
+                <div class="showcase__demo showcase__demo--flex">
+                    <button class="btn btn-primary">Join Now</button>
+                    <button class="btn btn-primary btn-large">Join Now (Large)</button>
+                    <button class="btn btn-primary btn-small">Join Now (Small)</button>
+                </div>
+                <div class="showcase__code">
+                    <button class="showcase__code-copy" onclick="copyCode(this)">Copy</button>
+                    <pre>&lt;button class="btn btn-primary"&gt;Join Now&lt;/button&gt;
+&lt;button class="btn btn-primary btn-large"&gt;Join Now&lt;/button&gt;
+&lt;button class="btn btn-primary btn-small"&gt;Join Now&lt;/button&gt;</pre>
+                </div>
+            </div>
+
+            <div class="showcase__divider"></div>
+
+            <div class="showcase__group">
+                <h3 class="showcase__group-title">Secondary Buttons</h3>
+                <div class="showcase__demo showcase__demo--flex">
+                    <button class="btn btn-secondary">Learn More</button>
+                    <button class="btn btn-secondary btn-large">Learn More (Large)</button>
+                    <button class="btn btn-secondary btn-small">Learn More (Small)</button>
+                </div>
+                <div class="showcase__code">
+                    <button class="showcase__code-copy" onclick="copyCode(this)">Copy</button>
+                    <pre>&lt;button class="btn btn-secondary"&gt;Learn More&lt;/button&gt;</pre>
+                </div>
+            </div>
+
+            <div class="showcase__divider"></div>
+
+            <div class="showcase__group">
+                <h3 class="showcase__group-title">Text Buttons</h3>
+                <div class="showcase__demo showcase__demo--flex">
+                    <button class="btn btn-text">View Details</button>
+                    <button class="btn btn-text">Read More</button>
+                </div>
+                <div class="showcase__code">
+                    <button class="showcase__code-copy" onclick="copyCode(this)">Copy</button>
+                    <pre>&lt;button class="btn btn-text"&gt;View Details&lt;/button&gt;</pre>
+                </div>
+            </div>
+        </section>
+
+        <!-- Badges & Links -->
+        <section class="showcase__section" id="badges">
+            <h2 class="showcase__section-title">Badges & Links (Atoms)</h2>
+
+            <div class="showcase__group">
+                <h3 class="showcase__group-title">Badges</h3>
+                <div class="showcase__demo showcase__demo--flex">
+                    <span class="badge badge-gold">Limited Availability</span>
+                    <span class="badge badge-outline">Coming Soon</span>
+                </div>
+                <div class="showcase__code">
+                    <button class="showcase__code-copy" onclick="copyCode(this)">Copy</button>
+                    <pre>&lt;span class="badge badge-gold"&gt;Limited Availability&lt;/span&gt;
+&lt;span class="badge badge-outline"&gt;Coming Soon&lt;/span&gt;</pre>
+                </div>
+            </div>
+
+            <div class="showcase__divider"></div>
+
+            <div class="showcase__group">
+                <h3 class="showcase__group-title">Links</h3>
+                <div class="showcase__demo showcase__demo--flex">
+                    <a href="#" class="link">Learn more about us</a>
+                    <a href="#" class="link">View pricing</a>
+                    <a href="#" class="link">Contact us</a>
+                </div>
+                <div class="showcase__code">
+                    <button class="showcase__code-copy" onclick="copyCode(this)">Copy</button>
+                    <pre>&lt;a href="#" class="link"&gt;Learn more about us&lt;/a&gt;</pre>
+                </div>
+            </div>
+
+            <div class="showcase__divider"></div>
+
+            <div class="showcase__group">
+                <h3 class="showcase__group-title">Dividers</h3>
+                <div class="showcase__demo">
+                    <hr class="divider">
+                    <hr class="divider divider-gold">
+                </div>
+                <div class="showcase__code">
+                    <button class="showcase__code-copy" onclick="copyCode(this)">Copy</button>
+                    <pre>&lt;hr class="divider"&gt;
+&lt;hr class="divider divider-gold"&gt;</pre>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cards -->
+        <section class="showcase__section" id="cards">
+            <h2 class="showcase__section-title">Benefit Cards (Molecules)</h2>
+            <p class="showcase__section-description">
+                Cards for showcasing features and benefits with hover effects.
+            </p>
+
+            <div class="showcase__demo showcase__demo--grid">
+                <div class="benefit-card">
+                    <span class="benefit-card__icon">⚡</span>
+                    <h3 class="benefit-card__title">High-Speed WiFi</h3>
+                    <p class="benefit-card__description">
+                        Ultra-fast fiber internet with dedicated bandwidth to keep you productive.
+                    </p>
+                </div>
+
+                <div class="benefit-card">
+                    <span class="benefit-card__icon">☕</span>
+                    <h3 class="benefit-card__title">Premium Coffee</h3>
+                    <p class="benefit-card__description">
+                        Unlimited barista-quality coffee and refreshments throughout the day.
+                    </p>
+                </div>
+            </div>
+
+            <div class="showcase__code">
+                <button class="showcase__code-copy" onclick="copyCode(this)">Copy</button>
+                <pre>&lt;div class="benefit-card"&gt;
+    &lt;span class="benefit-card__icon"&gt;⚡&lt;/span&gt;
+    &lt;h3 class="benefit-card__title"&gt;High-Speed WiFi&lt;/h3&gt;
+    &lt;p class="benefit-card__description"&gt;
+        Ultra-fast fiber internet...
+    &lt;/p&gt;
+&lt;/div&gt;</pre>
+            </div>
+        </section>
+
+        <!-- Pricing Card -->
+        <section class="showcase__section" id="pricing">
+            <h2 class="showcase__section-title">Pricing Card (Molecule)</h2>
+            <p class="showcase__section-description">
+                Complete pricing component with badge, features list, and CTA.
+            </p>
+
+            <div class="showcase__demo showcase__demo--center">
+                <div class="pricing-card">
+                    <div class="pricing-card__badge">
+                        <span class="badge badge-gold">Limited Availability</span>
+                    </div>
+
+                    <div class="pricing-card__price">
+                        <span class="pricing-card__currency">KSh</span>
+                        <span class="pricing-card__amount">15,000</span>
+                        <span class="pricing-card__period">/month</span>
+                    </div>
+
+                    <p class="label pricing-card__label">Full Membership Access</p>
+
+                    <ul class="pricing-card__features">
+                        <li class="pricing-card__feature">24/7 workspace access</li>
+                        <li class="pricing-card__feature">High-speed fiber internet</li>
+                        <li class="pricing-card__feature">Premium coffee & refreshments</li>
+                        <li class="pricing-card__feature">Meeting room privileges</li>
+                    </ul>
+
+                    <button class="btn btn-primary btn-large pricing-card__cta">
+                        Join Now
+                    </button>
+                </div>
+            </div>
+
+            <div class="showcase__code">
+                <button class="showcase__code-copy" onclick="copyCode(this)">Copy</button>
+                <pre>&lt;div class="pricing-card"&gt;
+    &lt;div class="pricing-card__badge"&gt;
+        &lt;span class="badge badge-gold"&gt;Limited Availability&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class="pricing-card__price"&gt;
+        &lt;span class="pricing-card__currency"&gt;KSh&lt;/span&gt;
+        &lt;span class="pricing-card__amount"&gt;15,000&lt;/span&gt;
+        &lt;span class="pricing-card__period"&gt;/month&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;ul class="pricing-card__features"&gt;...&lt;/ul&gt;
+    &lt;button class="btn btn-primary btn-large"&gt;Join Now&lt;/button&gt;
+&lt;/div&gt;</pre>
+            </div>
+        </section>
+
+        <!-- Hero -->
+        <section class="showcase__section" id="hero">
+            <h2 class="showcase__section-title">Hero Section (Organism)</h2>
+            <p class="showcase__section-description">
+                Complete hero section with logo, headline, description, and pricing.
+            </p>
+
+            <div class="showcase__note">
+                View the full hero section on the <a href="index.html" class="link">main landing page</a>.
+            </div>
+
+            <div class="showcase__code">
+                <button class="showcase__code-copy" onclick="copyCode(this)">Copy</button>
+                <pre>&lt;section class="hero"&gt;
+    &lt;div class="container-narrow"&gt;
+        &lt;div class="hero__logo"&gt;
+            &lt;h1 class="logo"&gt;Ikenna&lt;/h1&gt;
+        &lt;/div&gt;
+        &lt;h2 class="hero__headline"&gt;...&lt;/h2&gt;
+        &lt;p class="hero__subheadline"&gt;...&lt;/p&gt;
+        &lt;div class="hero__pricing"&gt;
+            &lt;!-- pricing card --&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;</pre>
+            </div>
+        </section>
+
+        <!-- Benefits Grid -->
+        <section class="showcase__section" id="benefits">
+            <h2 class="showcase__section-title">Benefits Grid (Organism)</h2>
+            <p class="showcase__section-description">
+                Grid layout for displaying multiple benefit cards with responsive behavior.
+            </p>
+
+            <div class="showcase__demo" style="background-color: var(--color-off-white);">
+                <div class="container">
+                    <div class="benefits__header">
+                        <h2 class="benefits__title">Designed for Excellence</h2>
+                        <p class="benefits__subtitle">
+                            Every detail crafted to elevate your work experience.
+                        </p>
+                    </div>
+
+                    <div class="benefits__grid">
+                        <div class="benefit-card">
+                            <span class="benefit-card__icon">⚡</span>
+                            <h3 class="benefit-card__title">High-Speed WiFi</h3>
+                            <p class="benefit-card__description">
+                                Ultra-fast fiber internet to keep you productive.
+                            </p>
+                        </div>
+
+                        <div class="benefit-card">
+                            <span class="benefit-card__icon">☕</span>
+                            <h3 class="benefit-card__title">Premium Coffee</h3>
+                            <p class="benefit-card__description">
+                                Unlimited barista-quality coffee and tea.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <section class="showcase__section" id="footer">
+            <h2 class="showcase__section-title">Footer (Organism)</h2>
+            <p class="showcase__section-description">
+                Complete footer with multiple columns, links, and social media.
+            </p>
+
+            <div class="showcase__demo">
+                <footer class="footer" style="padding: 2rem 0;">
+                    <div class="container">
+                        <div class="footer__top">
+                            <div class="footer__column">
+                                <h4 class="footer__column-title">Ikenna</h4>
+                                <p class="body-small">
+                                    Premium coworking space for Kenya's innovators.
+                                </p>
+                            </div>
+
+                            <div class="footer__column">
+                                <h4 class="footer__column-title">Contact</h4>
+                                <a href="#" class="footer__link">hello@ikenna.co.ke</a>
+                                <a href="#" class="footer__link">+254 700 000 000</a>
+                            </div>
+
+                            <div class="footer__column">
+                                <h4 class="footer__column-title">Quick Links</h4>
+                                <a href="#" class="footer__link">About</a>
+                                <a href="#" class="footer__link">Membership</a>
+                                <a href="#" class="footer__link">Contact</a>
+                            </div>
+                        </div>
+
+                        <div class="footer__bottom">
+                            <p class="footer__copyright">
+                                &copy; 2025 Ikenna Coworking
+                            </p>
+                            <div class="footer__social social-links">
+                                <a href="#" class="social-link">📷</a>
+                                <a href="#" class="social-link">🐦</a>
+                                <a href="#" class="social-link">💼</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </section>
+
+        <!-- End -->
+        <section class="showcase__section">
+            <h2 class="showcase__section-title">Start Building</h2>
+            <p class="showcase__section-description">
+                All components are built with atomic design principles, making them easy to reuse, maintain, and extend. Mix and match components to create new pages and layouts.
+            </p>
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="index.html" class="btn btn-primary btn-large">View Live Example</a>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Copy code functionality
+        function copyCode(button) {
+            const codeBlock = button.parentElement;
+            const code = codeBlock.querySelector('pre').textContent;
+
+            navigator.clipboard.writeText(code).then(() => {
+                const originalText = button.textContent;
+                button.textContent = 'Copied!';
+                setTimeout(() => {
+                    button.textContent = originalText;
+                }, 2000);
+            });
+        }
+
+        // Active navigation highlighting
+        function updateActiveNav() {
+            const sections = document.querySelectorAll('.showcase__section');
+            const navLinks = document.querySelectorAll('.showcase__nav-link');
+
+            window.addEventListener('scroll', () => {
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    if (scrollY >= sectionTop - 100) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove('showcase__nav-link--active');
+                    if (link.getAttribute('href') === `#${current}`) {
+                        link.classList.add('showcase__nav-link--active');
+                    }
+                });
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            updateActiveNav();
+            console.log('Component Library - Interactive showcase loaded');
+        });
+    </script>
+</body>
+</html>
